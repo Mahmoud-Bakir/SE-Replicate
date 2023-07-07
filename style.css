@@ -2,6 +2,11 @@ body{
     margin: 0;
     padding: 0;
 }
+:root {
+  --pink:#fb508eed;
+  --purple: #9864daed;
+  --aqua:#28eea7ed;
+}
 .header-container{
     display: flex;
     flex-direction: row;
@@ -12,7 +17,7 @@ body{
     display: flex;
     width: 50%;
     flex-direction: column;
-    background: purple;
+    animation: colorChange 8s infinite;
 }
 .right-header{
     display: flex;
@@ -20,3 +25,17 @@ body{
     flex-direction: column;
     background: black;
 }
+
+  @keyframes colorChange {
+    0%   { background-color: var(--aqua); }
+    10%  { background-color: var(--aqua); }
+    20%  { background-color: var(--aqua); }
+    30%  { background-color: var(--aqua); }
+    40%  { background-color: var(--purple);}
+    50%  { background-color: var(--purple); }
+    60%  { background-color: var(--purple); }
+    70%  { background-color: var(--purple); }
+    80%  { background-color: var(--pink); }
+    90%  { background-color: var(--pink); }
+    100%  { background-color: var(--pink); }
+  }
