@@ -18,9 +18,14 @@ body{
   display: flex;
   width: 50%;
   flex-direction: column;
-  background-image: url(assets/left-side.png);
   position: relative;
+  background-image: url(assets/left-side.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
 }
+
 .right-header{
   display: flex;
   width: 50%;
@@ -49,4 +54,54 @@ body{
   left: 0;
   animation: colorChange 8s infinite;
   filter:opacity(0.7)
+}
+.back{
+  max-height: 100%;
+  max-width: 100%;
+}
+.logo{
+  position:absolute;
+  z-index: 2;
+}
+.nav{
+  position: relative;
+  z-index: 3;
+}
+.details{
+  width: 100%;
+  height: 40vh;
+  max-height: 100vh;
+  max-width: 670px;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-left: 70px;
+  padding-right: 50px;
+  display: flex;
+  z-index: 5;
+  padding-top: 10px;
+  border: 5px solid black;
+}
+
+.hero-title-1 {
+  text-align: right;
+  text-transform: uppercase;
+  flex: 0 auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Noto Sans Mono, sans-serif;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 1;
+}
+.sub-h1-bg {
+  color: #fcfcfd;
+  background-color: #363738;
+  justify-content: flex-end;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 24px;
+  line-height: 2.5;
+  display: inline;
+  font-family: Noto Sans Mono, sans-serif;
 }
