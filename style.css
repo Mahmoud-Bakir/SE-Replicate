@@ -221,11 +221,13 @@ body{
 .second-section-hello{
 color: #363738;
 text-align: left;
-flex-grow: 5;
+flex-grow: 1;
 text-transform: uppercase;
 margin-bottom: 10px;
 font-size: 24px;
 font-weight: 900;
+margin-left: 5%;
+margin-right: 5%;
 
 }
 .second-section{
@@ -247,12 +249,30 @@ margin-top: 0;
     padding-left: 70px;
     padding-right: 70px;
     display: flex;
-    height: 100vh;
-    border: 1px solid salmon;
-
+    box-sizing: border-box;
+    background-color: #fff;
 }
 .symbol{
   color: var(--aqua);
   font-size: 24px;
 font-weight: 900;
+flex-grow:0;
+}
+.w-embed-youtubevideo {
+    width: 100%;
+    background-image: url(https://d3e54v103j8qbb.cloudfront.net/static/youtube-placeholder.2b05e7d68d.svg);
+    background-position: 50%;
+    background-size: cover;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.youtube-video {
+  object-fit: fill;
+  border: 15px solid #28eea7;
+  border-radius: 20px;
+  padding-right: 20%;
 }
