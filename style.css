@@ -62,10 +62,9 @@ body{
 .logo{
   position:absolute;
   z-index: 2;
-}
-.nav{
-  position: relative;
-  z-index: 3;
+  width:40%;
+  height: 40%;
+
 }
 .details{
   width: 100%;
@@ -80,7 +79,7 @@ body{
   display: flex;
   z-index: 5;
   padding-top: 10px;
-  border: 5px solid black;
+
 }
 
 .hero-title-1 {
@@ -92,16 +91,68 @@ body{
   font-family: Noto Sans Mono, sans-serif;
   font-size: 36px;
   font-weight: 900;
-  line-height: 1;
+  line-height: 0;
+}
+.hero-title-2 {
+  font-family: Noto Sans Mono, sans-serif;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 0;
 }
 .sub-h1-bg {
   color: #fcfcfd;
+  text-transform: uppercase;
   background-color: #363738;
   justify-content: flex-end;
   padding-left: 10px;
   padding-right: 10px;
   font-size: 24px;
   line-height: 2.5;
-  display: inline;
+  display: flex;
   font-family: Noto Sans Mono, sans-serif;
+}
+
+.left-nav{
+  display: flex;
+  flex: row;
+  width: 30%;
+  height: 17%;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 8;
+  position: absolute;
+}
+.changing-text::after {
+  animation: changeText 1s infinite;
+  z-index: 10;
+}
+.hero-description{
+  min-height: 10ch;
+  text-align: right;
+  flex: 1;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  line-height: 1.5;
+  text-decoration: none;
+  font-family: Noto Sans Mono, sans-serif;
+  color: white;
+  flex-wrap: wrap;
+  justify-self: end;
+}
+.cursor {
+  animation: blinkCursor 1s infinite;
+  z-index: 10;
+}
+
+@keyframes changeText {
+  0% { content: "Hello, World!"; }
+  25% { content: "How are you?"; }
+  50% { content: "I hope you're well."; }
+  75% { content: "Have a nice day!"; }
+  100% { content: "Goodbye!"; }
+}
+
+@keyframes blinkCursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
