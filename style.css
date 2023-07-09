@@ -30,7 +30,15 @@ body{
   display: flex;
   width: 50%;
   flex-direction: column;
-  background: rgb(0, 0, 0);
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url(assets/right-side.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  ;
+
 }
 
 @keyframes colorChange {
@@ -77,11 +85,10 @@ body{
   right: 10px;
   background-color: #363738;
 }
-.details{
-  width: 100%;
+.details-left{
   height: 40vh;
   max-height: 100vh;
-  max-width: 670px;
+  max-width: 645px;
   flex-flow: column;
   justify-content: flex-start;
   align-items: flex-end;
@@ -90,6 +97,22 @@ body{
   display: flex;
   z-index: 5;
   padding-top: 10px;
+  border: 2px solid white;
+
+}
+.details-right{
+  height: 40vh;
+  max-height: 100vh;
+  max-width: 645px;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 70px;
+  padding-right: 50px;
+  display: flex;
+  z-index: 5;
+  padding-top: 10px;
+  border: 2px solid white;
 
 }
 
