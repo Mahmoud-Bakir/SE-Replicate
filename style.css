@@ -1,6 +1,14 @@
+*{
+  box-sizing: border-box;
+}
 body{
   margin: 0;
   padding: 0;
+  color: #363738;
+  background-color: #fcfcfd;
+  font-family: Noto Sans Mono, sans-serif;
+  font-size: 16px;
+  line-height: 1;
 }
 :root {
 --pink:#fb508eed;
@@ -37,7 +45,6 @@ body{
   background-size:cover;
   background-repeat: no-repeat;
   justify-content: center;
-  ;
 
 }
 
@@ -97,8 +104,6 @@ body{
   display: flex;
   z-index: 5;
   padding-top: 10px;
-  border: 2px solid white;
-
 }
 .details-right{
   height: 40vh;
@@ -112,7 +117,6 @@ body{
   display: flex;
   z-index: 5;
   padding-top: 10px;
-  border: 2px solid white;
 
 }
 
@@ -189,4 +193,66 @@ body{
 @keyframes blinkCursor {
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
+}
+
+/*After this line come the second section style*/
+.circle-icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.circle-div-icon {
+  width: 24px;
+  height: 24px;
+  background-color: #dcdee1;
+  border-radius: 20px;
+}
+
+.circle-div-icon.black{
+  background-color: black;
+}
+.circle-div-icon.grey{
+  background-color: #dcdee1;
+}
+.circle-div-icon.aqua{
+  background-color: var(--aqua);
+}
+.second-section-hello{
+color: #363738;
+text-align: left;
+flex-grow: 5;
+text-transform: uppercase;
+margin-bottom: 10px;
+font-size: 24px;
+font-weight: 900;
+
+}
+.second-section{
+margin-top: 0;
+}
+.second-section-header{
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  padding-top: 5%;
+
+}
+.second-section-body {
+    max-width: 100%;
+    flex-direction: column;
+    padding-left: 70px;
+    padding-right: 70px;
+    display: flex;
+    height: 100vh;
+    border: 1px solid salmon;
+
+}
+.symbol{
+  color: var(--aqua);
+  font-size: 24px;
+font-weight: 900;
 }
