@@ -278,6 +278,7 @@ flex-grow:0;
 }
 
 /*After this line come the third section style*/
+
 .third-section{
   margin: 0;
 }
@@ -289,22 +290,82 @@ padding-right: 70px;
 display: flex;
 box-sizing: border-box;
 background-color: #fff;
-border: 1px solid salmon;
 }
 .cells-container{
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  gap: 20px;
 }
-.milestone-container {
+.big-milestone-container {
   display: flex;
   background-color: #f1f2f3;
   border-radius: 20px;
   flex-direction: column;
   flex: 1;
   justify-content: center;
-  align-self: stretch;
-  align-items: center;
   display: flex;
+  align-items: flex-start;
+  padding: 60px 70px;
+  max-width: fit-content;
+  max-height: fit-content;
 }
+.small-miletsone-container{
+  display: flex;
+  flex-direction:row ;  
+  justify-content: space-around;
+  gap: 50px;
+  
+}
+.milestone-small {
+    align-items: flex-start;
+    align-self: stretch;
+    max-width: 100%;
+    justify-self:baseline;
+    max-height: fit-content;
+    padding: 40px;
+    background-color: #f1f2f3;
+    border-radius: 20px;
+}
+.milestone-title {
+  color: #363738;
+  text-align: center;
+  font-size: 120px;
+  font-weight: 900;
+}
+.milestone-percentage {
+  color: #a5a6a9;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1.4;
+}
+.milestone-percentage.left {
+  color: #363738;
+  text-align: left;
+}
+.rich-text-content-tab {
+  color: #fcfcfd;
+  align-self: stretch;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.rich-text-content-tab.dark {
+  color: #363738;
+}
+.rich-text-content-tab.subsection-content-p {
+  color: #dcdee1;
+}
+.rich-text-content-tab.subsection-content-p.dark {
+  color: #363738;
+}
+.subsection-content-p {
+  color: #a5a6a9;
+  text-align: left;
+  flex: 0 auto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* After this line come the style of the 4th section */
+
